@@ -31,6 +31,13 @@
 {% set NTP_UPDATE_SERVER = controller_private_ip %}
 
 
+mysql:
+  server:
+    config_file: salt://mysql/files/my-{{ grains['os']}}.cnf
+    root_password: {{ MYSQL_ROOT }}
+    bind-address: {{ MYSQL_SERVER_IP }}
+    port: 3306
+
 rabbit:
   pass: {{ RABBIT_PASS }}
 
