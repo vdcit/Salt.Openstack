@@ -6,4 +6,4 @@ base:
   'controller':
     - mysql
     - keystone
-    - keystone.usertenant
+    - keystone.create-user-tenant

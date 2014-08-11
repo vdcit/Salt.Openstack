@@ -1,4 +1,4 @@
-{% set controller_private_ip = '10.10.10.2' %}
+{% set controller_private_ip = '10.10.10.81' %}
 {% set private_ip = grains['ip_interfaces']['eth0'][0] %}
 {% set TUNNEL_IP = grains['ip_interfaces']['eth1'][0] %}
 {% set EXTERNAL_INTERFACE = 'eth2' %}
